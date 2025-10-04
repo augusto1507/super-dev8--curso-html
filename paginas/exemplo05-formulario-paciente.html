@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Paciente</title>
+</head>
+
+<body>
+    <a href="../index.html">Voltar</a>
+    <form>
+
+        <!--
+        ✔Nome
+        ✔idade
+        ✔data consulta
+        ✔email
+        ✔tipo sanguinio
+        ✔endereço
+        ✔estado civil
+        ✔alergias
+        -->
+
+        <div>
+            <label for="campo-nome">Nome</label>
+            <input type="text" placeholder="Digite seu nome" id="campo-nome" name="nome">
+        </div>
+
+        <div>
+            <label for="idade">Idade</label>
+            <input type="number" id="idade" name="idade" placeholder="Digite sua idade">
+        </div>
+
+        <div>
+            <label for="data-consulta">Data da consulta</label>
+            <input type="date" id="data-consulta" name="data">
+        </div>
+
+        <div>
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" placeholder="Digite seu E-mail">
+        </div>
+
+        <div>
+            <label for="tipo-sanguinio">Tipo sanguinio</label>
+            <select name="tipo-sanguinio" id="tipo-sanguinio">
+                <option disabled selected>Escolha uma opção</option>
+                <option value="A+">A Postivo</option>
+                <option value="A-">A Negativo</option>
+                <option value="AB+">AB Postivo</option>
+                <option value="AB-">AB Negativo</option>
+                <option value="B+">B Postivo</option>
+                <option value="B-">B Negativo</option>
+                <option value="O+">O Postivo</option>
+                <option value="O-">O Negativo</option>
+
+            </select>
+
+        </div>
+        <!--Endereço( ✔estado, ✔CEP, ✔cidade, ✔bairro, ✔logradouro, ✔nunero, ✔complemento)-->
+        <div>
+            <label for="uf">UF</label>
+            <select name="unidade-federativa" id="uf">
+                <option disabled selected>Escolha uma opção</option>
+                <option value="AC">Acre (AC)</option>
+                <option value="AL">Alagoas (AL)</option>
+                <option value="AP">Amapá (AP)</option>
+                <option value="AM">Amazonas (AM)</option>
+                <option value="BA">Bahia (BA)</option>
+                <option value="CE">Ceará (CE)</option>
+                <option value="DF">Distrito Federal (DF)</option>
+                <option value="ES">Espírito Santo (ES)</option>
+                <option value="GO">Goiás (GO)</option>
+                <option value="MA">Maranhão (MA)</option>
+                <option value="MT">Mato Grosso (MT)</option>
+                <option value="MS">Mato Grosso do Sul (MS)</option>
+                <option value="MG">Minas Gerais (MG)</option>
+                <option value="PA">Pará (PA)</option>
+                <option value="PB">Paraíba (PB)</option>
+                <option value="PR">Paraná (PR)</option>
+                <option value="PE">Pernambuco (PE)</option>
+                <option value="PI">Piauí (PI)</option>
+                <option value="RJ">Rio de Janeiro (RJ)</option>
+                <option value="RN">Rio Grande do Norte (RN)</option>
+                <option value="RS">Rio Grande do Sul (RS)</option>
+                <option value="RO">Rondônia (RO)</option>
+                <option value="RR">Roraima (RR)</option>
+                <option value="SC">Santa Catarina (SC)</option>
+                <option value="SP">São Paulo (SP)</option>
+                <option value="SE">Sergipe (SE)</option>
+                <option value="TO">Tocantins (TO)</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="cidade">Cidade</label>
+            <input type="text" id="cidade" name="cidade" placeholder="Digite sua cidade">
+        </div>
+
+        <div>
+            <label for="bairro">Bairro</label>
+            <input type="text" id="bairro" name="bairro" placeholder="Digite seu bairro">
+        </div>
+
+        <div>
+            <label for="cep">CEP</label>
+            <input type="text" id="cep" name="CEP" placeholder="Digite seu CEP">
+        </div>
+
+        <div>
+            <label for="logradouro">Logradouro</label>
+            <input type="text" id="logradouro" name="logradouro" placeholder="Digite seu logradouro">
+        </div>
+
+        <div>
+            <label for="numero">Numero</label>
+            <input type="text" id="numero" name="numero" placeholder="Digite o numero da sua casa">
+        </div>
+
+        <div>
+            <label for="complemento" style="display: block;">Complemento de endereço</label>
+            <textarea name="complemento endereço" id="complemento" placeholder="Digite seu complemento de endereço"
+                rows="10" cols="60"></textarea>
+        </div>
+
+        <div>
+            <span style="display: block;">Estado Cívil</span>
+
+            <input type="radio" value="solteiro(a)" id="campo-estado-civil-solteiro" name="estado-civil">
+            <label for="campo-estado-civil-solteiro">Solteiro(a)</label>
+
+            <input type="radio" value="casado(a)" id="campo-estado-civil-casado" name="estado-civil">
+            <label for="campo-estado-civil-casado">Casado(a)</label>
+
+            <input type="radio" value="divorciado(a)" id="campo-estado-civil-divorciado" name="estado-civil">
+            <label for="campo-estado-civil-divorciado">Divorciado(a)</label>
+        </div>
+
+        <div>
+            <span style="display: block;">Alergias</span>
+
+            <input type="checkbox" id="alimentos" value="Alimentos" name="Alergias">
+            <label for="alimentos">Alimentos</label>
+
+            <input type="checkbox" id="ambiente" value="Ambientais" name="Alergias">
+            <label for="ambiente">Ambientais</label>
+
+            <input type="checkbox" id="medicamento" value="Medicamentos" name="Alergias">
+            <label for="medicamento">Medicamentos</label>
+
+            <input type="checkbox" id="picadas" value="Picadas e Contatos" name="Alergias">
+            <label for="picadas">Picadas e Contatos</label>
+        </div>
+
+        
+
+
+
+        <button type="submit">Agendar</button>
+    </form>
+
+
+</body>
+
+</html>
